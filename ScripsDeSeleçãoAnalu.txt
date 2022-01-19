@@ -1,0 +1,9 @@
+-- Selecionar o nome das turmas e suas respectivas datas de inicio
+SELECT nome_turma, dt_inicio from tb_turmas
+
+-- Selecionar todos os facilitadores que foram admitidos no ano de 2020
+SELECT * FROM tb_facilitadores WHERE TO_CHAR(dt_admissao, 'YYYY') = '2020';
+
+-- Selecionar as descrições tech e soft do curso de Data Analytics da Resilia
+SELECT id_curso, descricao_tech, descricao_soft FROM tb_modulos
+WHERE id_curso = 2
